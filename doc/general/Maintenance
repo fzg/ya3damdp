@@ -1,0 +1,41 @@
+We need:
+
+	a/ a manageable cleansing fluid, easily separatable from organic waste
+	b/ a way to filter that fluid, store waste efficiently
+	c/ that fluid must not contaminate what is melt
+
+
+Let's assume one vessel. It's metal or ceramics.
+It's surrounded by a magnetic coil, which can be fed in different ways:
+	a. to generate a magnetic field to push in / out magnetised content
+	b. to heat by induction to different levels: for decontamination / plastics melting / [glass melting?]
+It possesses an ultrasound transciever device, to agitate cleansing fluid inside
+
+It's cylindric, has multiple ports:
+A big one allowing bulk loading of matter and unloading of sterilized objects
+A very small one, fitted with an extruding aparatus, possibly
+Alternatively, we could cast some pieces, using a neutral gas to push molten matter into profiles cut onto cylinders fitted to
+that opening
+
+
+
+Use cases:
+		Sterilization
+
+
+		Plastics melting
+
+
+		Glass melting
+
+
+
+Separation of waste from liquid: find a thermoplastic such as to obtain multiple phases?
+
+
+Feeder : can feed cleansing chemical and/or gas. with valve.
+Eva
+Pressure monitoring: !?
+UI:	microcontroller, multi position switch for mode, push buttons, lcd?
+Interlocks: by using the pressure monitoring?
+
