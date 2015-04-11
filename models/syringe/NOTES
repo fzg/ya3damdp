@@ -1,0 +1,7 @@
+Okay, apparently it's non trivial to use springs in openscad. So maybe after an export...
+
+TODO:
+
+	Fix volume calculation
+	Implement spring-loaded trigger
+	
