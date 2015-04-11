@@ -1,0 +1,11 @@
+After a bit of openscad modeling, realize two missing features:
+mechanics (spring-lever) and material (to specify that the needle needs have a magnetized end)
+There, a quest begins. Quest for an usable, simulation package that's easy to tweak (materials, forces).
+-> Lack of all-in one OSS cam/cad with mechanics, EM, simulation / material property
+Looked at opencascade, broken deb. Python rants...
+Looked at trying brl-cad, saw cheat-sheet, nope.
+
+Looking up Product Lifecycle Management suites, as a side dish
+Trying to get access to Solidworks, hopefuly.
+
+In the meantime, drawing sketches.
