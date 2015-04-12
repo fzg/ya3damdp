@@ -1,8 +1,8 @@
 
 resolution = 64;
 
-module cyl(h, d, center) {
-	cylinder(h=h, d=d, center=center, $fn=resolution);
+module cyl(h, r, center) {
+	cylinder(h=h, r=r, center=center, $fn=resolution);
 }
 
 module tube(h, d, hd, flr) {
@@ -10,7 +10,7 @@ module tube(h, d, hd, flr) {
 	difference(){
 		 cyl(h=h, d=d, center=true);
 		 translate([0,0,flr]){
-		 cylinder(h=h-flr, d=hd, center=true, $fn=resolution);};
+		 cyl(h=h-flr, d=hd, center=true, $fn=resolution);};
 		};
 }
 
@@ -23,10 +23,10 @@ module needle() {
 
 	difference(){
 		union(){
-		 cylinder(h=length, d1=ext_dia, d2=hole_dia-e, center=true, $fn=resolution);
-		 cylinder(h=tip_length, d=ext_dia, center=true, $fn=resolution);
+		 cyl(h=length, d1=ext_dia, d2=hole_dia-e, center=true, $fn=resolution);
+		 cyl(h=tip_length, d=ext_dia, center=true, $fn=resolution);
 		};
-	cylinder(h=length+tip_length, d=hole_dia, center=true, $fn=resolution);};
+	cyl(h=length+tip_length, d=hole_dia, center=true, $fn=resolution);};
 }
 
 module cup(len, dia, hole_dia) {
@@ -35,9 +35,9 @@ module cup(len, dia, hole_dia) {
 	difference() {
 	union() {
 	 tube(h=len, d=dia, hd=dia-cup_width, flr=10);
-	 translate([]){cylinder(h=1.25, d=2*hole_dia, center=true, $fn=resolution);};
+	 translate([]){cyl(h=1.25, d=2*hole_dia, center=true, $fn=resolution);};
 	}
-	 cylinder(h=len, d=hole_dia, center=true, $fn=resolution);
+	 cyl(h=len, d=hole_dia, center=true, $fn=resolution);
 	}
 }
 
@@ -70,4 +70,4 @@ module syringe(cap, w) {
 	Capacity, width
 
 */
-syringe(20000,  10);
+syringe(5000,  8);
